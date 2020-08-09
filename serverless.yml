@@ -1,1 +1,22 @@
+app: ac-lambda-test
+org: business1314151617
+service: ac-contact-apis
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: ap-southeast-2
+  memorySize: 128
+  timeout: 900
+  environment:
+   ${file(../serverless.common.yml):environment}
+
+
+functions:
+  insertContact:
+    handler: handler.insertContact
+  updateContact:
+    handler: handler.updateContact
+
 
