@@ -1,6 +1,6 @@
 app: ac-lambda-test
 org: business1314151617
-service: ac-contact-apis
+service: lambda-insert-contact
 
 provider:
   name: aws
